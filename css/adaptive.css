@@ -1,6 +1,14 @@
 /* Адаптивность */
 /* Ноутбуки */
+@media (min-width: 1080px) {
+    .mobile-menu-btn{
+        display: none;
+    }
+}
 @media (max-width: 1200px) {
+    .mobile-menu-btn{
+        display: none;
+    }
     .contacts-title {
         font-size: 36px;
     }
@@ -21,6 +29,19 @@
 
 /* Планшеты */
 @media (max-width: 992px) {
+    .mobile-menu-btn {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    z-index: 1001;
+}
+
     .services {
         padding: 60px 0;
     }
@@ -337,6 +358,8 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+         display: none;
+
     }
 
     .dropdown {
@@ -370,6 +393,7 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 12px;
+        display: none;
     }
 
     .dropdown-content {

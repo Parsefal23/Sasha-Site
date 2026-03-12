@@ -819,415 +819,200 @@ body {
     box-shadow: 0 20px 30px -8px rgba(37, 99, 235, 0.4);
 }
 
-/* Адаптивность */
-
-/* Ноутбуки */
-@media (max-width: 1200px) {
-    .contacts-title {
-        font-size: 36px;
-    }
-    
-    .contact-card {
-        padding: 30px;
-    }
+/* Мобильная навигация */
+.mobile-header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-/* Планшеты */
-@media (max-width: 992px) {
-    .contacts {
-        padding: 70px 0;
-    }
-    
-    .contacts-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .contacts-map {
-        order: -1; /* Карта сверху на планшетах */
-    }
-    
-    .map-container {
-        height: 350px;
-    }
+.mobile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 100%;
 }
 
-/* Мобильные устройства */
-@media (max-width: 768px) {
-    .contacts {
-        padding: 50px 0;
-    }
-    
-    .contacts-header {
-        margin-bottom: 40px;
-    }
-    
-    .contacts-title {
-        font-size: 28px;
-    }
-    
-    .contacts-subtitle {
-        font-size: 16px;
-    }
-    
-    .contact-card {
-        padding: 25px;
-    }
-    
-    .contact-card-title {
-        font-size: 22px;
-        margin-bottom: 25px;
-    }
-    
-    .contact-item {
-        gap: 15px;
-    }
-    
-    .contact-icon {
-        width: 48px;
-        height: 48px;
-        font-size: 18px;
-    }
-    
-    .contact-details h4 {
-        font-size: 14px;
-    }
-    
-    .contact-details p {
-        font-size: 16px;
-    }
-    
-    .contact-details a {
-        font-size: 16px;
-    }
-    
-    .contact-social {
-        padding: 25px;
-    }
-    
-    .social-links {
-        justify-content: center;
-    }
-    
-    .social-link {
-        width: 44px;
-        height: 44px;
-        font-size: 18px;
-    }
-    
-    .map-container {
-        height: 300px;
-        border-radius: 20px;
-    }
-    
-    .map-button {
-        padding: 14px 24px;
-        font-size: 15px;
-    }
+.mobile-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
 }
 
-/* Маленькие телефоны */
-@media (max-width: 360px) {
-    .contacts-title {
-        font-size: 24px;
-    }
-    
-    .contact-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .contact-icon {
-        margin-bottom: 5px;
-    }
-    
-    .contact-details a::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .map-container {
-        height: 250px;
-    }
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: #2563eb;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 700;
 }
 
-
-
-
-
-
-
-
-
-/* Адаптивность */
-
-/* Ноутбуки и маленькие десктопы */
-@media (max-width: 1200px) {
-    .about-title {
-        font-size: 36px;
-    }
-    
-    .about-features {
-        gap: 20px;
-    }
+.logo-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
 }
 
-/* Планшеты */
-@media (max-width: 992px) {
-    .about {
-        padding: 70px 0;
-    }
-    
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-    
-    .about-content {
-        max-width: 100%;
-        order: 1;
-    }
-    
-    .about-image {
-        order: 2;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    
-    .about-title {
-        font-size: 32px;
-    }
-    
-    .stats-card {
-        position: relative;
-        bottom: 0;
-        width: 100%;
-        transform: none;
-                left:0%;
-
-    }
-    
-    .stats-card:hover {
-        transform: translateY(-5px);
-    }
+/* Кнопка гамбургер */
+.mobile-menu-btn {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    z-index: 1001;
 }
 
-/* Мобильные устройства */
-@media (max-width: 768px) {
-    .about {
-        padding: 50px 0;
-    }
-    
-    .about-title {
-        font-size: 28px;
-    }
-    
-    .about-description {
-        font-size: 16px;
-        margin-bottom: 30px;
-    }
-    
-    .about-features {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .about-buttons {
-        flex-direction: column;
-        gap: 12px;
-    }
-    
-    .about-btn-primary,
-    .about-btn-secondary {
-        text-align: center;
-        padding: 12px 24px;
-    }
-    
-    .stats-card {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 15px;
-        left:0%;
-    }
-    
-    .stat-number {
-        font-size: 22px;
-    }
-    
-    .stat-label {
-        font-size: 10px;
-    }
+.mobile-menu-btn span {
+    width: 100%;
+    height: 3px;
+    background: #2563eb;
+    border-radius: 3px;
+    transition: all 0.3s;
 }
 
-/* Маленькие телефоны */
-@media (max-width: 360px) {
-    .about-title {
-        font-size: 24px;
-    }
-    
-    .stats-card {
-        grid-template-columns: 1fr;
-        gap: 10px;
-                left:0%;
-
-    }
-    
-    .stat-item {
-        padding: 5px 0;
-    }
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
-
-
-
-/* Планшеты */
-@media (max-width: 992px) {
-    .services {
-        padding: 60px 0;
-    }
-
-    .services-title {
-        font-size: 36px;
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-        padding: 0 15px;
-    }
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
 }
 
-/* Мобильные устройства */
-@media (max-width: 576px) {
-    .services {
-        padding: 40px 0;
-    }
-
-    .services-header {
-        margin-bottom: 40px;
-    }
-
-    .services-title {
-        font-size: 28px;
-    }
-
-    .services-subtitle {
-        font-size: 16px;
-        padding: 0 15px;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .service-card {
-        padding: 30px 20px;
-    }
-
-    .service-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 26px;
-    }
-
-    .service-title {
-        font-size: 20px;
-    }
-
-    .service-description {
-        font-size: 15px;
-    }
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Маленькие телефоны */
-@media (max-width: 360px) {
-    .services-title {
-        font-size: 24px;
-    }
-
-    .service-card {
-        padding: 25px 15px;
-    }
+/* Мобильное меню */
+.mobile-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: white;
+    transition: left 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
 }
 
+.mobile-menu.active {
+    left: 0;
+}
 
+.mobile-nav {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
+.mobile-nav-link {
+    display: block;
+    padding: 15px 20px;
+    color: #1e293b;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
 
-/* Футер */
-footer {
-    background-color: #ffffff;
-    border-top: 1px solid #e2e8f0;
-    padding: 24px 0;
-    margin-top: auto; /* Прижимает футер к низу */
+.mobile-nav-link:active {
+    background: #f1f5f9;
+    color: #2563eb;
+}
+
+/* Выпадающее меню */
+.mobile-dropdown {
+    margin-bottom: 5px;
+}
+
+.mobile-dropdown-btn {
+    width: 100%;
+    padding: 15px 20px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1e293b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.mobile-dropdown-btn:active {
+    background: #f1f5f9;
+    color: #2563eb;
+}
+
+.mobile-dropdown-btn i {
+    font-size: 14px;
+    transition: transform 0.3s;
+}
+
+.mobile-dropdown.active .mobile-dropdown-btn i {
+    transform: rotate(180deg);
+}
+
+.mobile-dropdown-content {
+    display: none;
+    padding-left: 20px;
+}
+
+.mobile-dropdown.active .mobile-dropdown-content {
+    display: block;
+}
+
+.mobile-dropdown-content a {
+    display: block;
+    padding: 12px 20px;
     color: #64748b;
-    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
 }
 
-
-
-
-
-/* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        height: auto;
-        padding: 16px 0;
-        gap: 16px;
-    }
-
-    .nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .dropdown {
-        position: static;
-    }
-
-    .dropdown-content {
-        position: static;
-        box-shadow: none;
-        border: 1px solid #e2e8f0;
-        margin-top: 8px;
-        display: none;
-        width: 100%;
-    }
-
-    /* На мобильном дропдаун будет раскрываться при клике (можно доработать с JS), 
-    но пока оставим по наведению */
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .logo-text p {
-        display: none; /* Прячем подпись на мобильных */
-    }
+.mobile-dropdown-content a:active {
+    background: #f1f5f9;
+    color: #2563eb;
 }
 
-/* Для экранов до 480px */
-@media (max-width: 480px) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
+/* Затемнение фона */
+.mobile-overlay {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(0,0,0,0.5);
+    z-index: 998;
+}
 
-    .dropdown-content {
-        position: static;
-        min-width: 100%;
-        text-align: center;
-    }
+.mobile-overlay.active {
+    display: block;
+}
 
-    .logo-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 22px;
-    }
-
-    .logo-text h1 {
-        font-size: 20px;
-    }
+/* Блокировка прокрутки */
+body.menu-open {
+    overflow: hidden;
 }

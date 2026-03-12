@@ -1,0 +1,390 @@
+/* Адаптивность */
+/* Ноутбуки */
+@media (max-width: 1200px) {
+    .contacts-title {
+        font-size: 36px;
+    }
+
+    .contact-card {
+        padding: 30px;
+    }
+
+    .about-title {
+        font-size: 36px;
+    }
+
+    .about-features {
+        gap: 20px;
+    }
+
+}
+
+/* Планшеты */
+@media (max-width: 992px) {
+    .services {
+        padding: 60px 0;
+    }
+
+    .services-title {
+        font-size: 36px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+
+    .about {
+        padding: 70px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about-content {
+        max-width: 100%;
+        order: 1;
+    }
+
+    .about-image {
+        order: 2;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .about-title {
+        font-size: 32px;
+    }
+
+    .stats-card {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        transform: none;
+        left: 0%;
+
+    }
+
+    .stats-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .contacts {
+        padding: 70px 0;
+    }
+
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contacts-map {
+        order: -1;
+        /* Карта сверху на планшетах */
+    }
+
+    .map-container {
+        height: 350px;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .about {
+        padding: 50px 0;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-description {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .about-btn-primary,
+    .about-btn-secondary {
+        text-align: center;
+        padding: 12px 24px;
+    }
+
+    .stats-card {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 15px;
+        left: 0%;
+    }
+
+    .stat-number {
+        font-size: 22px;
+    }
+
+    .stat-label {
+        font-size: 10px;
+    }
+
+    .contacts {
+        padding: 50px 0;
+    }
+
+    .contacts-header {
+        margin-bottom: 40px;
+    }
+
+    .contacts-title {
+        font-size: 28px;
+    }
+
+    .contacts-subtitle {
+        font-size: 16px;
+    }
+
+    .contact-card {
+        padding: 25px;
+    }
+
+    .contact-card-title {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .contact-item {
+        gap: 15px;
+    }
+
+    .contact-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .contact-details h4 {
+        font-size: 14px;
+    }
+
+    .contact-details p {
+        font-size: 16px;
+    }
+
+    .contact-details a {
+        font-size: 16px;
+    }
+
+    .contact-social {
+        padding: 25px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-link {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .map-container {
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .map-button {
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+}
+
+/* Маленькие телефоны */
+@media (max-width: 360px) {
+
+    .about-title {
+        font-size: 24px;
+    }
+
+    .stats-card {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        left: 0%;
+
+    }
+    .stat-item {
+        padding: 5px 0;
+    }
+
+    .contacts-title {
+        font-size: 24px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-icon {
+        margin-bottom: 5px;
+    }
+
+    .contact-details a::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .map-container {
+        height: 250px;
+    }
+}
+
+
+
+/* Мобильные устройства */
+@media (max-width: 576px) {
+    .services {
+        padding: 40px 0;
+    }
+
+    .services-header {
+        margin-bottom: 40px;
+    }
+
+    .services-title {
+        font-size: 28px;
+    }
+
+    .services-subtitle {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+    }
+
+    .service-title {
+        font-size: 20px;
+    }
+
+    .service-description {
+        font-size: 15px;
+    }
+}
+
+/* Маленькие телефоны */
+@media (max-width: 360px) {
+    .services-title {
+        font-size: 24px;
+    }
+
+    .service-card {
+        padding: 25px 15px;
+    }
+}
+
+
+
+
+/* Футер */
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    padding: 24px 0;
+    margin-top: auto;
+    /* Прижимает футер к низу */
+    color: #64748b;
+    text-align: center;
+}
+
+
+
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        height: auto;
+        padding: 16px 0;
+        gap: 16px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .dropdown {
+        position: static;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        border: 1px solid #e2e8f0;
+        margin-top: 8px;
+        display: none;
+        width: 100%;
+    }
+
+    /* На мобильном дропдаун будет раскрываться при клике (можно доработать с JS), 
+    но пока оставим по наведению */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .logo-text p {
+        display: none;
+        /* Прячем подпись на мобильных */
+    }
+}
+
+/* Для экранов до 480px */
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .dropdown-content {
+        position: static;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+
+    .logo-text h1 {
+        font-size: 20px;
+    }
+}

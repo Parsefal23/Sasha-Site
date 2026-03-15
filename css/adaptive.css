@@ -30,6 +30,24 @@
 
 /* Планшеты */
 @media (max-width: 992px) {
+ .feedback {
+        padding: 60px 0;
+    }
+    
+    .feedback-title {
+        font-size: 36px;
+    }
+    
+    .feedback-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+    
+    .feedback-info h3 {
+        font-size: 24px;
+    }
+
     .mobile-menu-btn {
     width: 30px;
     height: 30px;
@@ -117,6 +135,29 @@
 /* Мобильные устройства */
 @media (max-width: 768px) {
 
+     .feedback {
+        padding: 40px 0;
+    }
+    
+    .feedback-title {
+        font-size: 28px;
+    }
+    
+    .feedback-subtitle {
+        font-size: 16px;
+    }
+    
+    .feedback-grid {
+        padding: 20px;
+    }
+    
+    .feedback-form {
+        padding: 25px;
+    }
+    
+    .feedback-info h3 {
+        font-size: 22px;
+    }
     
 
     .about {
@@ -277,15 +318,23 @@
 
 
 
-/* Мобильные устройства */
-@media (max-width: 576px) {
-    
-}
 
 /* Маленькие телефоны */
 @media (max-width: 360px) {
     .services-title {
         font-size: 24px;
+    }
+
+    .feedback-contact-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .form-checkbox {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
     }
 
     .service-card {
